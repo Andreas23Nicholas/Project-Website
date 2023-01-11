@@ -1,0 +1,296 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 20px;
+  font-size: 15px;
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+.layar-dalam {
+  width: 1000px;
+  margin: auto;
+}
+
+.layar-penuh {
+  width: 100%;
+}
+
+nav {
+  z-index: 100;
+  color: #fff;
+  text-align: center;
+  position: fixed;
+  border-bottom: 1px solid #b1b1b1;
+  line-height: 60px;
+  width: 100%;
+  transition: background-color 0.5s ease;
+}
+
+nav.putih {
+  background-color: #fff;
+}
+
+nav.putih ul li a {
+  color: #333;
+}
+
+nav .logo {
+  float: left;
+  position: relative;
+  line-height: 55px;
+  text-align: center;
+}
+
+nav .logo img {
+  vertical-align: middle;
+  width: 120px;
+}
+
+nav .menu {
+  float: right;
+  height: 60px;
+  max-width: 600px;
+}
+
+nav .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav .menu ul li {
+  list-style-type: none;
+  float: left;
+  line-height: 60px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+  padding: 0px 16px 0px 16px;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* pengaturan header */
+header {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 2;
+}
+
+header img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -2;
+}
+
+header .intro {
+    z-index: 100;
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 40%;
+  }
+  
+  header .intro h3 {
+    font-size: 60px;
+    margin-bottom: 30px;
+    font-family: 'Ubuntu', sans-serif;
+    padding: 0;
+    line-height: 65px;
+  }
+  
+  header .intro p {
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+header .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #000;
+    opacity: 50%;
+    z-index: -1;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #ffffff;
+}
+
+nav.putih .tombol-menu .garis {
+    background-color: #333;
+}
+
+@media screen and (max-width: 991.98px) {
+    .layar-dalam {
+      width: 90%;
+    }
+  
+    nav .menu ul {
+      display: none;
+      margin-top: 60px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+    }
+  
+    nav .menu ul li {
+      width: 100%;
+      border-bottom: 1px solid #ccc;
+      background-color: #fff;
+      line-height: 40px;
+    }
+  
+    nav .menu ul li a {
+      color: #333;
+    }
+  
+    .tombol-menu {
+      display: flex;
+    }
+  
+    .support {
+      display: block;
+    }
+  
+    .support div {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+  }
+
+/* Shop Page */
+
+.content img {
+    width: 235px;
+    height: 175px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.content{
+	width: 20%;
+	margin: 15px;
+	box-sizing: border-box;
+	float: left;
+	text-align: center;
+	border-radius: 20px;
+	cursor: pointer;
+	padding-top: 10px;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+	0 10px 10px rgba(0,0,0,0.22);
+	transition: .4s;
+	background: #ffffff;
+}
+
+.content:hover{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16),
+	0 3px 6px rgba(0,0,0,0.23);
+	transform: translate(0px, -8px);
+}
+
+p{
+	text-align: center;
+	color: #b2bec3;
+	padding-top: 0 8px;
+}
+
+.content ul{
+	list-style: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 0;
+}
+
+.content li{
+	padding: 5px;
+}
+
+.fa{
+	font-size: 26px;
+	transition: .4s;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.checked{
+	color: #ff9f43;
+}
+
+.fa:hover{
+	transform: scale(1.3);
+	transition: .6s;
+}
+
+button{
+	text-align: center;
+	font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+	color: #fff;
+	width: 100%;
+	padding: 15px;
+	border: 0;
+	outline: none;
+	cursor: pointer;
+	margin-top: 5px;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+button {
+    background-color: #529481;
+}
+
+@media(max-width:1000px){
+	.content{
+		width: 45%;
+	}
+}
+
+@media(max-width:750px){
+	.content{
+		width: 100%;
+	}
+}
+

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Printex - Checkout</title>
+    <link rel="stylesheet" href="CheckoutForm.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Lato&family=Raleway:wght@700&family=Ubuntu:wght@500;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="Image/PrintexIcon.png" />
+</head>
+
+<body>
+    <nav>
+        <div class="layar-dalam">
+            <div class="logo">
+                <a href=""><img src="Image/PrintexLogo.png" /></a>
+            </div>
+            <div class="menu">
+                <a href="#" class="tombol-menu">
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                    <span class="garis"></span>
+                </a>
+                <ul>
+                    <li><a href="AfterLogin.html">HOME</a></li>
+                    <li><a href="ShopPage.html">SHOP</a></li>
+                    <li><a href="AboutPage2.html">ABOUT</a></li>
+                    <li><a href="ContactPage2.html">CONTACT</a></li>
+                    <li><a href="LogoutScreen.html">LOG OUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="layar-penuh">
+        <header id="home">
+            <div class="intro">
+                <h1>Checkout</h1>
+            </div>
+
+            <body>
+                <form action="action">
+                    <label for="name">Name</label><br>
+                    <input class="box1" type="text" name="name" id="name" placeholder="Enter your Name" required="required"><br>
+                    <label for="email">Email</label><br>
+                    <input class="box1" type="text" name="email" id="email" placeholder="Enter your Email" required="required"><br>
+                    <label for="notelp">Phone Number</label><br>
+                    <input class="box1" type="text" name="notelp" id="notelp" placeholder="Enter your Phone Number" required="required"><br>
+                    <label for="file">Upload Your Design</label><br>
+                    <input class="box1" type="file" id="file" accept="image/*">
+                    <label for="address">Address</label><br>
+                    <input class="box1" type="text" name="address" id="address" placeholder="Enter your Address" required="required"><br>
+                    <div class="div1">
+                        <label for="city">City</label><br>
+                        <input class="box2" type="text" name="city" id="city" placeholder="Enter your City" required="required"><br>
+                    </div>
+                    <div class="div1">
+                        <label for="code">Post Code</label><br>
+                        <input class="box2" type="text" name="code" id="code" placeholder="Enter your Post Code" required="required"><br>
+                    </div>
+                    <a href="PaymentForm.html">
+                        <button class="btn" type="button">Checkout & Pay</button>
+                    </a>
+                    <a href="ShopPage.html">
+                        <button class="btn" type="button">Cancel</button>
+                    </a>
+                </form>
+            </body>
+        </header>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="LandingPage.js"></script>
+</body>
+
+</html>
